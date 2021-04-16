@@ -1,0 +1,55 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1/>
+ <Memory2/>
+ <Memory3/>
+ <Memory4/>
+ <Project>
+  <ProjectSessionItem path="saadc_pca10040"/>
+  <ProjectSessionItem path="saadc_pca10040;saadc_pca10040"/>
+  <ProjectSessionItem path="saadc_pca10040;saadc_pca10040;Application"/>
+  <ProjectSessionItem path="saadc_pca10040;saadc_pca10040;nRF_Drivers"/>
+  <ProjectSessionItem path="saadc_pca10040;saadc_pca10040;nRF_Log"/>
+ </Project>
+ <Register1/>
+ <Register2/>
+ <Register3/>
+ <Register4/>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never"/>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="71" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/peripheral/saadc/pca10040/blank/ses/adc.c" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="109" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="1656" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="1643" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="35" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="adc.c" selected="1" top="27" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="99" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/peripheral/saadc/pca10040/blank/ses/adc.c" useBinaryEdit="0" left="0" path="../../../../../../components/drivers_nrf/rtc/nrf_drv_rtc.h" selected="0" top="86" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="907" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/experimental_log/src/nrf_log_frontend.c" selected="0" top="866" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="129" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/peripheral/saadc/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/boards/boards.h" selected="0" top="97" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="3" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/peripheral/saadc/main.c" useBinaryEdit="0" left="0" path="adc.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="543" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/peripheral/saadc/pca10040/blank/ses/adc.c" useBinaryEdit="0" left="0" path="../../../../../../components/drivers_nrf/hal/nrf_saadc.h" selected="0" top="511" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="132" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/peripheral/saadc/pca10040/blank/ses/adc.c" useBinaryEdit="0" left="0" path="../../../../../../components/drivers_nrf/saadc/nrf_drv_saadc.h" selected="0" top="105" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockRightTop" x="0" y="114" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/peripheral/saadc/main.c" useBinaryEdit="0" left="19" path="../../../../../../components/drivers_nrf/clock/nrf_drv_clock.h" selected="0" top="89" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="saadc_pca10040" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/components/drivers_nrf/rtc" debugSearchPath="" autoConnectCapabilities="3199"/>
+</session>

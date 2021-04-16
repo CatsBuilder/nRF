@@ -48,6 +48,7 @@
  * @image html example_board_setup_a.jpg "Use board setup A for this example."
  */
 
+#include "nrf_gpio.h"
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -62,20 +63,22 @@
 #include "app_util_platform.h"
 #include "nrf_pwr_mgmt.h"
 #include "nrf_drv_power.h"
-
-
+#include "nrf_drv_rtc.h"
+#include "nrf_drv_clock.h"
 #include "nrf_log.h"
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
+#include "adc.h"
 
-#define SAMPLES_IN_BUFFER 5
-volatile uint8_t state = 1;
 
-static const nrf_drv_timer_t m_timer = NRF_DRV_TIMER_INSTANCE(0);
-static nrf_saadc_value_t     m_buffer_pool[2][SAMPLES_IN_BUFFER];
-static nrf_ppi_channel_t     m_ppi_channel;
-static uint32_t              m_adc_evt_counter;
+//volatile uint8_t state = 1;
 
+
+//static const nrf_drv_timer_t m_timer = NRF_DRV_TIMER_INSTANCE(0);
+//static nrf_saadc_value_t     m_buffer_pool[2][SAMPLES_IN_BUFFER];
+//static nrf_ppi_channel_t     m_ppi_channel;
+//static uint32_t              m_adc_evt_counter;
+/*
 
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
@@ -95,7 +98,7 @@ void saadc_sampling_event_init(void)
     err_code = nrf_drv_timer_init(&m_timer, &timer_cfg, timer_handler);
     APP_ERROR_CHECK(err_code);
 
-    /* setup m_timer for compare event every 400ms */
+    /* setup m_timer for compare event every 400ms 
     uint32_t ticks = nrf_drv_timer_ms_to_ticks(&m_timer, 400);
     nrf_drv_timer_extended_compare(&m_timer,
                                    NRF_TIMER_CC_CHANNEL0,
@@ -108,7 +111,7 @@ void saadc_sampling_event_init(void)
                                                                                 NRF_TIMER_CC_CHANNEL0);
     uint32_t saadc_sample_task_addr   = nrf_drv_saadc_sample_task_get();
 
-    /* setup ppi channel so that timer compare event is triggering sample task in SAADC */
+    /* setup ppi channel so that timer compare event is triggering sample task in SAADC 
     err_code = nrf_drv_ppi_channel_alloc(&m_ppi_channel);
     APP_ERROR_CHECK(err_code);
 
@@ -146,35 +149,30 @@ void saadc_callback(nrf_drv_saadc_evt_t const * p_event)
         m_adc_evt_counter++;
     }
 }
+*/
 
-
-void saadc_init(void)
-{
-    ret_code_t err_code;
-    nrf_saadc_channel_config_t channel_config =
-        NRF_DRV_SAADC_DEFAULT_CHANNEL_CONFIG_SE(NRF_SAADC_INPUT_AIN0);
-
-    err_code = nrf_drv_saadc_init(NULL, saadc_callback);
-    APP_ERROR_CHECK(err_code);
-
-    err_code = nrf_drv_saadc_channel_init(0, &channel_config);
-    APP_ERROR_CHECK(err_code);
-
-    err_code = nrf_drv_saadc_buffer_convert(m_buffer_pool[0], SAMPLES_IN_BUFFER);
-    APP_ERROR_CHECK(err_code);
-
-    err_code = nrf_drv_saadc_buffer_convert(m_buffer_pool[1], SAMPLES_IN_BUFFER);
-    APP_ERROR_CHECK(err_code);
-
-}
 
 
 /**
  * @brief Function for main application entry.
  */
+
 int main(void)
 {
-    uint32_t err_code = NRF_LOG_INIT(NULL);
+    
+  bsp_board_leds_init();
+  lfclk_config();
+  rtc_config();
+    while (1)
+    {
+       __SEV();
+       __WFE();
+       __WFE();
+    }
+}
+
+
+/**uint32_t err_code = NRF_LOG_INIT(NULL);
     APP_ERROR_CHECK(err_code);
 
     NRF_LOG_DEFAULT_BACKENDS_INIT();
@@ -188,14 +186,4 @@ int main(void)
     NRF_LOG_INFO("SAADC HAL simple example.");
     saadc_init();
     saadc_sampling_event_init();
-    saadc_sampling_event_enable();
-
-    while (1)
-    {
-        nrf_pwr_mgmt_run();
-        NRF_LOG_FLUSH();
-    }
-}
-
-
-/** @} */
+    saadc_sampling_event_enable(); @} */
