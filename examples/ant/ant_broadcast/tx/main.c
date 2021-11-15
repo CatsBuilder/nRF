@@ -163,6 +163,9 @@ static void softdevice_setup(void)
     APP_ERROR_CHECK(err_code);
 }
 
+
+
+
 /**@brief Function for setting up the ANT module to be ready for TX broadcast.
  */
 static void ant_channel_tx_broadcast_setup(void)
@@ -190,6 +193,11 @@ static void ant_channel_tx_broadcast_setup(void)
     err_code = sd_ant_channel_open(BROADCAST_CHANNEL_NUMBER);
     APP_ERROR_CHECK(err_code);
 }
+
+
+
+
+
 
 /**@brief Function for application main entry. Does not return.
  */

@@ -14,6 +14,10 @@
   <ProjectSessionItem path="ant_broadcast_tx_pca10040_s212"/>
   <ProjectSessionItem path="ant_broadcast_tx_pca10040_s212;ant_broadcast_tx_pca10040_s212"/>
   <ProjectSessionItem path="ant_broadcast_tx_pca10040_s212;ant_broadcast_tx_pca10040_s212;Application"/>
+<<<<<<< HEAD
+=======
+  <ProjectSessionItem path="ant_broadcast_tx_pca10040_s212;ant_broadcast_tx_pca10040_s212;nRF_ANT"/>
+>>>>>>> 903e7630ee40bb6b2d481649a84da3856e94ea9a
  </Project>
  <Register1/>
  <Register2/>
@@ -38,6 +42,7 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
+<<<<<<< HEAD
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/softdevice/common/nrf_sdh_ant.c" selected="0" top="96" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="30" y="96" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="75" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="81" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/nRF/examples/ant/ant_broadcast/tx/main.c" useBinaryEdit="0" left="0" path="../../../../../../../components/ant/ant_channel_config/ant_channel_config.h" selected="0" top="58" codecName="Default"/>
@@ -45,6 +50,14 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="138" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/nRF/examples/ant/ant_broadcast/tx/main.c" useBinaryEdit="0" left="0" path="../../../../../../../components/softdevice/s212/headers/ant_parameters.h" selected="0" top="115" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="47" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/nRF/examples/ant/ant_broadcast/tx/main.c" useBinaryEdit="0" left="0" path="../../../../../../../components/ant/ant_channel_config/ant_channel_config.c" selected="0" top="13" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="277" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/nRF/examples/ant/ant_broadcast/tx/main.c" useBinaryEdit="0" left="0" path="../../../../../../../components/softdevice/s212/headers/ant_interface.h" selected="0" top="254" codecName="Default"/>
+=======
+  <SessionOpenFile windowGroup="DockEditLeft" x="59" y="44" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="12" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/ant/ant_broadcast/tx/main.c" useBinaryEdit="0" left="0" path="../../../../../../../components/softdevice/common/nrf_sdh_ant.h" selected="0" top="6" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="44" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/ant/ant_channel_config/ant_channel_config.c" selected="0" top="18" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="236" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/ant/ant_broadcast/tx/main.c" useBinaryEdit="0" left="0" path="../../../../../../../components/softdevice/s212/headers/ant_interface.h" selected="0" top="209" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="83" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/ant/ant_broadcast/tx/main.c" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="68" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="61" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/Tesi/FILE_TESISTI/nRF5_SDK_14.2.0_17b948a/examples/ant/ant_broadcast/tx/main.c" useBinaryEdit="0" left="0" path="../../../../../../../components/ant/ant_channel_config/ant_channel_config.h" selected="0" top="34" codecName="Default"/>
+>>>>>>> 903e7630ee40bb6b2d481649a84da3856e94ea9a
  </Files>
  <ARMCrossStudioWindow activeProject="ant_broadcast_tx_pca10040_s212" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

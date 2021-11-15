@@ -1,11 +1,20 @@
 Output/Debug/Obj/saadc_pca10040/boards.o: \
+<<<<<<< HEAD
  C\:\Users\theru\Desktop\nRF\nRF\components\boards\boards.c \
  C\:\Users\theru\Desktop\nRF\nRF\components\boards\boards.h \
+=======
+ C\:\Users\theru\Desktop\Tesi\FILE_TESISTI\nRF5_SDK_14.2.0_17b948a\components\boards\boards.c \
+ C\:\Users\theru\Desktop\Tesi\FILE_TESISTI\nRF5_SDK_14.2.0_17b948a\components\boards\boards.h \
+>>>>>>> 903e7630ee40bb6b2d481649a84da3856e94ea9a
  ../../../../../../components/drivers_nrf/hal/nrf_gpio.h \
  ../../../../../../components/device/nrf.h \
  ../../../../../../components/device/nrf52.h \
  ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
+<<<<<<< HEAD
  C\:/Program\ Files\ (x86)/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.42a/include/stdint.h \
+=======
+ C\:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.42a/include/stdint.h \
+>>>>>>> 903e7630ee40bb6b2d481649a84da3856e94ea9a
  ../../../../../../components/toolchain/cmsis/include/core_cmInstr.h \
  ../../../../../../components/toolchain/cmsis/include/cmsis_gcc.h \
  ../../../../../../components/toolchain/cmsis/include/core_cmFunc.h \
@@ -19,13 +28,24 @@ Output/Debug/Obj/saadc_pca10040/boards.o: \
  ../../../../../../components/device/nrf52832_peripherals.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/util/app_error.h \
+<<<<<<< HEAD
  C\:/Program\ Files\ (x86)/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.42a/include/stdio.h \
  C\:/Program\ Files\ (x86)/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.42a/include/__crossworks.h \
  C\:/Program\ Files\ (x86)/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.42a/include/stdbool.h \
+=======
+ C\:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.42a/include/stdio.h \
+ C\:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.42a/include/__crossworks.h \
+ C\:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.42a/include/stdbool.h \
+>>>>>>> 903e7630ee40bb6b2d481649a84da3856e94ea9a
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
  ../config/sdk_config.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/app_error_weak.h \
+<<<<<<< HEAD
  C\:/Program\ Files\ (x86)/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.42a/include/stdlib.h \
  C\:\Users\theru\Desktop\nRF\nRF\components\boards\pca10040.h
+=======
+ C\:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.42a/include/stdlib.h \
+ C\:\Users\theru\Desktop\Tesi\FILE_TESISTI\nRF5_SDK_14.2.0_17b948a\components\boards\pca10040.h
+>>>>>>> 903e7630ee40bb6b2d481649a84da3856e94ea9a
