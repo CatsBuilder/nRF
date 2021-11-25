@@ -6,22 +6,37 @@
  <FrameBufferWindow>
   <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
  </FrameBufferWindow>
- <Memory1/>
- <Memory2/>
- <Memory3/>
- <Memory4/>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="ECG" radix="16" sizeText="" addressText=""/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="ECG" radix="16" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="ECG" radix="16" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="ECG" radix="16" sizeText="" addressText=""/>
+ </Memory4>
  <Project>
-  <ProjectSessionItem path="rtc_pca10040"/>
-  <ProjectSessionItem path="rtc_pca10040;ECG"/>
-  <ProjectSessionItem path="rtc_pca10040;ECG;Application"/>
-  <ProjectSessionItem path="rtc_pca10040;ECG;Device"/>
-  <ProjectSessionItem path="rtc_pca10040;ECG;nRF_Drivers"/>
-  <ProjectSessionItem path="rtc_pca10040;ECG;nRF_Log"/>
+  <ProjectSessionItem path="ECG"/>
+  <ProjectSessionItem path="ECG;ECG"/>
+  <ProjectSessionItem path="ECG;ECG;Application"/>
+  <ProjectSessionItem path="ECG;ECG;Application;Executables"/>
+  <ProjectSessionItem path="ECG;ECG;Application;Headers"/>
  </Project>
- <Register1/>
- <Register2/>
- <Register3/>
- <Register4/>
+ <Register1>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal;SAADC/TASKS_START;SAADC/TASKS_SAMPLE;SAADC/TASKS_STOP;SAADC/TASKS_CALIBRATEOFFSET;SAADC/EVENTS_STARTED;SAADC/EVENTS_END;SAADC/EVENTS_DONE;SAADC/EVENTS_RESULTDONE;SAADC/EVENTS_CALIBRATEDONE;SAADC/EVENTS_STOPPED;SAADC/INTEN;SAADC/INTENSET;SAADC/INTENCLR;SAADC/STATUS;SAADC/ENABLE;SAADC/RESOLUTION;SAADC/OVERSAMPLE;SAADC/SAMPLERATE;SAADC/EVENTS_CH[0].LIMITH;SAADC/EVENTS_CH[0].LIMITL;SAADC/EVENTS_CH[1].LIMITH;SAADC/EVENTS_CH[1].LIMITL;SAADC/EVENTS_CH[2].LIMITH;SAADC/EVENTS_CH[2].LIMITL;SAADC/EVENTS_CH[3].LIMITH;SAADC/EVENTS_CH[3].LIMITL;SAADC/EVENTS_CH[4].LIMITH;SAADC/EVENTS_CH[4].LIMITL;SAADC/EVENTS_CH[5].LIMITH;SAADC/EVENTS_CH[5].LIMITL;SAADC/EVENTS_CH[6].LIMITH;SAADC/EVENTS_CH[6].LIMITL;SAADC/EVENTS_CH[7].LIMITH;SAADC/EVENTS_CH[7].LIMITL;SAADC/CH[0].PSELP;SAADC/CH[0].PSELN;SAADC/CH[0].CONFIG;SAADC/CH[0].LIMIT;SAADC/CH[1].PSELP;SAADC/CH[1].PSELN;SAADC/CH[1].CONFIG;SAADC/CH[1].LIMIT;SAADC/CH[2].PSELP;SAADC/CH[2].PSELN;SAADC/CH[2].CONFIG;SAADC/CH[2].LIMIT;SAADC/CH[3].PSELP;SAADC/CH[3].PSELN;SAADC/CH[3].CONFIG;SAADC/CH[3].LIMIT;SAADC/CH[4].PSELP;SAADC/CH[4].PSELN;SAADC/CH[4].CONFIG;SAADC/CH[4].LIMIT;SAADC/CH[5].PSELP;SAADC/CH[5].PSELN;SAADC/CH[5].CONFIG;SAADC/CH[5].LIMIT;SAADC/CH[6].PSELP;SAADC/CH[6].PSELN;SAADC/CH[6].CONFIG;SAADC/CH[6].LIMIT;SAADC/CH[7].PSELP;SAADC/CH[7].PSELN;SAADC/CH[7].CONFIG;SAADC/CH[7].LIMIT;SAADC/RESULT.PTR;SAADC/RESULT.MAXCNT;SAADC/RESULT.AMOUNT;PPI/CHEN;PPI/CHENSET;PPI/CHENCLR;PPI/CHG[0];PPI/CHG[1];PPI/CHG[2];PPI/CHG[3];PPI/CHG[4];PPI/CHG[5];PPI/TASKS_CHG[0].EN;PPI/TASKS_CHG[0].DIS;PPI/TASKS_CHG[1].EN;PPI/TASKS_CHG[1].DIS;PPI/TASKS_CHG[2].EN;PPI/TASKS_CHG[2].DIS;PPI/TASKS_CHG[3].EN;PPI/TASKS_CHG[3].DIS;PPI/TASKS_CHG[4].EN;PPI/TASKS_CHG[4].DIS;PPI/TASKS_CHG[5].EN;PPI/TASKS_CHG[5].DIS;PPI/CH[0].EEP;PPI/CH[0].TEP;PPI/CH[1].EEP;PPI/CH[1].TEP;PPI/CH[2].EEP;PPI/CH[2].TEP;PPI/CH[3].EEP;PPI/CH[3].TEP;PPI/CH[4].EEP;PPI/CH[4].TEP;PPI/CH[5].EEP;PPI/CH[5].TEP;PPI/CH[6].EEP;PPI/CH[6].TEP;PPI/CH[7].EEP;PPI/CH[7].TEP;PPI/CH[8].EEP;PPI/CH[8].TEP;PPI/CH[9].EEP;PPI/CH[9].TEP;PPI/CH[10].EEP;PPI/CH[10].TEP;PPI/CH[11].EEP;PPI/CH[11].TEP;PPI/CH[12].EEP;PPI/CH[12].TEP;PPI/CH[13].EEP;PPI/CH[13].TEP;PPI/CH[14].EEP;PPI/CH[14].TEP;PPI/CH[15].EEP;PPI/CH[15].TEP;PPI/CH[16].EEP;PPI/CH[16].TEP;PPI/CH[17].EEP;PPI/CH[17].TEP;PPI/CH[18].EEP;PPI/CH[18].TEP;PPI/CH[19].EEP;PPI/CH[19].TEP;PPI/FORK[0].TEP;PPI/FORK[1].TEP;PPI/FORK[2].TEP;PPI/FORK[3].TEP;PPI/FORK[4].TEP;PPI/FORK[5].TEP;PPI/FORK[6].TEP;PPI/FORK[7].TEP;PPI/FORK[8].TEP;PPI/FORK[9].TEP;PPI/FORK[10].TEP;PPI/FORK[11].TEP;PPI/FORK[12].TEP;PPI/FORK[13].TEP;PPI/FORK[14].TEP;PPI/FORK[15].TEP;PPI/FORK[16].TEP;PPI/FORK[17].TEP;PPI/FORK[18].TEP;PPI/FORK[19].TEP;PPI/FORK[20].TEP;PPI/FORK[21].TEP;PPI/FORK[22].TEP;PPI/FORK[23].TEP;PPI/FORK[24].TEP;PPI/FORK[25].TEP;PPI/FORK[26].TEP;PPI/FORK[27].TEP;PPI/FORK[28].TEP;PPI/FORK[29].TEP;PPI/FORK[30].TEP;PPI/FORK[31].TEP" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context;SAADC;SAADC/CH[0].CONFIG;PPI;PPI/CH[0].EEP;PPI/CH[0].TEP" name="ECG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="ECG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="ECG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="ECG" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
  <Threads>
   <ThreadsWindow showLists=""/>
  </Threads>
@@ -29,7 +44,13 @@
   <Trace enabled="Yes"/>
  </TraceWindow>
  <Watch1>
-  <Watches active="1" update="Never"/>
+  <Watches active="1" update="Never">
+   <Watchpoint expression="config" name="config" radix="16" linenumber="36" filename="rtc.c"/>
+   <Watchpoint expression="NRF_RTC_EVENT_TICK" name="NRF_RTC_EVENT_TICK" radix="-1" linenumber="106" filename="../../../../../../components/drivers_nrf/hal/nrf_rtc.h"/>
+   <Watchpoint expression="NRF_SAADC_TASK_SAMPLE" name="NRF_SAADC_TASK_SAMPLE" radix="-1" linenumber="187" filename="../../../../../../components/drivers_nrf/hal/nrf_saadc.h"/>
+   <Watchpoint expression="p_config" name="p_config" radix="-1" linenumber="85" filename="../../../../../../components/drivers_nrf/rtc/nrf_drv_rtc.c"/>
+   <Watchpoint expression="val" name="val" radix="10" linenumber="10" filename="adc.c"/>
+  </Watches>
  </Watch1>
  <Watch2>
   <Watches active="0" update="Never"/>
@@ -41,23 +62,13 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="19" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="9" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="15" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="ppi.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="18" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="rtc.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="79" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="dma.c" selected="0" top="61" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="74" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/nRF/examples/ant/Progetto-11.21/main.c" useBinaryEdit="0" left="0" path="../config./sdk_config.h" selected="0" top="56" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="137" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/nRF/examples/ant/Progetto-11.21/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/softdevice/s212/headers/ant_parameters.h" selected="0" top="119" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="33" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="adc.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="10" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/nRF/examples/ant/Progetto-11.21/pca10040/s212/ses/ppi.c" useBinaryEdit="0" left="0" path="ppi.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="20" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/nRF/examples/ant/Progetto-11.21/pca10040/s212/ses/dma.c" useBinaryEdit="0" left="0" path="dma.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="229" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/nRF/examples/ant/Progetto-11.21/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/softdevice/common/nrf_sdh.h" selected="0" top="207" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="72" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/nRF/examples/ant/Progetto-11.21/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/experimental_log/nrf_log_default_backends.h" selected="0" top="45" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="54" y="9" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/softdevice/common/nrf_sdh.c" selected="1" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="114" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/components/softdevice/common/nrf_sdh.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/experimental_section_vars/nrf_section_iter.h" selected="0" top="92" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="31" y="3240" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="3224" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="33" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="rtc.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="86" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/examples/ant/Progetto-11.21/pca10040/s212/ses/ppi.c" useBinaryEdit="0" left="0" path="../../../../../../components/drivers_nrf/ppi/nrf_drv_ppi.h" selected="0" top="73" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="42" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/drivers_nrf/clock/nrf_drv_clock.c" selected="0" top="49" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="48" y="34" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/examples/ant/Progetto-11.21/main.c" useBinaryEdit="0" left="0" path="ant.c" selected="0" top="14" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="138" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/examples/ant/Progetto-11.21/pca10040/s212/ses/ant.c" useBinaryEdit="0" left="0" path="../../../../../../components/softdevice/s212/headers/ant_parameters.h" selected="0" top="253" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="78" useTextEdit="1" openedFrom="C:/Users/theru/Desktop/nRF/examples/ant/Progetto-11.21/pca10040/s212/ses/ant.c" useBinaryEdit="0" left="0" path="../config./sdk_config.h" selected="1" top="52" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="23" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="dma.c" selected="0" top="1" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="7897" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="49" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="92" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="adc.c" selected="0" top="55" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="23" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="rtc.c" selected="0" top="0" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="ECG" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/theru/Desktop/nRF/components/drivers_nrf/ppi" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <ARMCrossStudioWindow activeProject="ECG" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/theru/Desktop/nRF/components/libraries/uart" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

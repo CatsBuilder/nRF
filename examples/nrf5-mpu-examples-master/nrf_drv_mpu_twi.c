@@ -18,16 +18,16 @@
 
 /* Pins to connect ICM. Pinout is different for nRF51 DK and nRF52 DK
  * and therefore I have added a conditional statement defining different pins
- * for each board. This is only for my own convenience. 
+ * for each board. This is only for my own convenience.
  */
- #define MPU_TWI_SCL_PIN 13 // per ICM 13 (MPU: quando è connessa a nrF52DK: 27; quando è connessa a nrf52832: 17)
- #define MPU_TWI_SDA_PIN 12 // per ICM 12 (MPU: quando è connessa a nrF52DK: 26; quando è connessa a nrf52832: 16)
+ #define MPU_TWI_SCL_PIN 17 // per ICM 13 (MPU: quando ï¿½ connessa a nrF52DK: 27; quando ï¿½ connessa a nrf52832: 17)
+ #define MPU_TWI_SDA_PIN 16 // per ICM 12 (MPU: quando ï¿½ connessa a nrF52DK: 26; quando ï¿½ connessa a nrf52832: 16)
 
 
 #define MPU_TWI_BUFFER_SIZE     	14 // 14 byte buffers will suffice to read acceleromter, gyroscope and temperature data in one transmission.
-#define MPU_TWI_TIMEOUT 			10000 
-#define MPU_ADDRESS     			0x68 //anche l'indirizzo di ICM20948 è 0x68
-#define MPU_AK89XX_MAGN_ADDRESS     0x0C // anche lo slave address di AK09916 è 0Ch
+#define MPU_TWI_TIMEOUT 			10000
+#define MPU_ADDRESS     			0x68 //anche l'indirizzo di ICM20948 ï¿½ 0x68
+#define MPU_AK89XX_MAGN_ADDRESS     0x0C // anche lo slave address di AK09916 ï¿½ 0Ch
 
 
 static const nrf_drv_twi_t m_twi_instance = NRF_DRV_TWI_INSTANCE(0);
@@ -77,7 +77,7 @@ static void nrf_drv_mpu_twi_event_handler(nrf_drv_twi_evt_t const * p_event, voi
 uint32_t nrf_drv_mpu_init(void)
 {
     uint32_t err_code;
-    
+
     const nrf_drv_twi_config_t twi_mpu_config = {
        .scl                = MPU_TWI_SCL_PIN,
        .sda                = MPU_TWI_SDA_PIN,
@@ -85,15 +85,15 @@ uint32_t nrf_drv_mpu_init(void)
        .interrupt_priority = APP_IRQ_PRIORITY_HIGHEST,
        .clear_bus_init     = false
     };
-    
+
     err_code = nrf_drv_twi_init(&m_twi_instance, &twi_mpu_config, nrf_drv_mpu_twi_event_handler, NULL);
     if(err_code != NRF_SUCCESS)
 	{
 		return err_code;
 	}
-    
+
     nrf_drv_twi_enable(&m_twi_instance);
-	
+
 	return NRF_SUCCESS;
 }
 

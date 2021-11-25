@@ -3,9 +3,9 @@
 
   #include "nrf_drv_saadc.h"
   #include "nrf_log.h"
-
+  #include "ant.h"
   // Samples are needed to be stored in a buffer, we define the length here
-  #define SAMPLE_BUFFER_LEN 5 
+  #define SAMPLE_BUFFER_LEN 3
 
   // Save the samples in double buffer which is  a two dimentional array
   static nrf_saadc_value_t m_buffer_pool[2][SAMPLE_BUFFER_LEN]; 

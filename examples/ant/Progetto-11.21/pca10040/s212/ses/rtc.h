@@ -8,6 +8,7 @@
   void rtc_handler(nrf_drv_rtc_int_type_t);
   void lfclk_config(void);
   void rtc_config(void);
+  void rtc_start(void);
 #endif
 
 

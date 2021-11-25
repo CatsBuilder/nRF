@@ -39,4 +39,22 @@ Output/Debug/Obj/ECG/adc.o: \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/experimental_log/src/nrf_log_internal.h \
- ../../../../../../components/libraries/util/app_util.h
+ ../../../../../../components/libraries/util/app_util.h \
+ C:\Users\theru\Desktop\nRF\examples\ant\Progetto-11.21\pca10040\s212\ses\ant.h \
+ ../../../../../../components/ant/ant_channel_config/ant_channel_config.h \
+ ../../../../../../components/softdevice/s212/headers/ant_parameters.h \
+ ../../../../../../components/softdevice/s212/headers/ant_interface.h \
+ ../../../../../../components/softdevice/s212/headers/nrf_svc.h \
+ ../../../../../../components/softdevice/s212/headers/ant_parameters.h \
+ ../../../../../../components/libraries/util/app_error.h \
+ ../../../../../../components/softdevice/common/nrf_sdh_ant.h \
+ ../../../../../../components/libraries/experimental_section_vars/nrf_section_iter.h \
+ ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
+ ../../../../../../components/drivers_nrf/hal/nrf_gpio.h \
+ ../../../../../../components/drivers_nrf/hal/nrf_peripherals.h \
+ ../../../../../../components/device/nrf52832_peripherals.h \
+ C:/Program\ Files\ (x86)/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.66/include/stdlib.h \
+ ../../../../../../components/drivers_nrf/uart/nrf_drv_uart.h \
+ ../../../../../../components/drivers_nrf/hal/nrf_peripherals.h \
+ ../../../../../../components/drivers_nrf/hal/nrf_uart.h \
+ ../../../../../../components/drivers_nrf/hal/nrf_uarte.h

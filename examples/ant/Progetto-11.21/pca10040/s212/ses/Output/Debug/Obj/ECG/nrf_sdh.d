@@ -48,5 +48,4 @@ Output/Debug/Obj/ECG/nrf_sdh.o: \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/experimental_log/nrf_log.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
- ../../../../../../components/libraries/experimental_log/src/nrf_log_internal.h \
- ../../../../../../components/libraries/scheduler/app_scheduler.h
+ ../../../../../../components/libraries/experimental_log/src/nrf_log_internal.h

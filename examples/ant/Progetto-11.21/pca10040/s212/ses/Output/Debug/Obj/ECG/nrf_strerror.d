@@ -25,4 +25,6 @@ Output/Debug/Obj/ECG/nrf_strerror.o: \
  ../../../../../../components/device/nrf51_to_nrf52.h \
  ../../../../../../components/device/nrf52_name_change.h \
  ../../../../../../components/device/compiler_abstraction.h \
- ../../../../../../components/libraries/util/sdk_macros.h
+ ../../../../../../components/libraries/util/sdk_macros.h \
+ C:\Users\theru\Desktop\nRF\components\libraries\strerror\nrf_strerror.h \
+ ../../../../../../components/libraries/util/sdk_errors.h

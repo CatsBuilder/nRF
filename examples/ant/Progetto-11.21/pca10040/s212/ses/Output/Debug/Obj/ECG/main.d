@@ -46,6 +46,7 @@ Output/Debug/Obj/ECG/main.o: \
  ../../../../../../components/boards/boards.h \
  ../../../../../../components/boards/pca10040.h \
  ../../../../../../components/libraries/bsp/bsp.h \
+ ../../../../../../components/libraries/hardfault/hardfault.h \
  ../../../../../../components/libraries/pwr_mgmt/nrf_pwr_mgmt.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section_iter.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
@@ -73,15 +74,20 @@ Output/Debug/Obj/ECG/main.o: \
  ../../../../../../components/libraries/mutex/nrf_mtx.h \
  ../../../../../../components/libraries/atomic/nrf_atomic.h \
  ../../../../../../components/libraries/atomic/nrf_atomic_internal.h \
- ../../../../../../components/libraries/timer/app_timer.h \
+ ../../../../../../components/libraries/timer/app_timer.h ant.h \
  ../../../../../../components/ant/ant_channel_config/ant_channel_config.h \
  ../../../../../../components/softdevice/s212/headers/ant_parameters.h \
  ../../../../../../components/softdevice/s212/headers/ant_interface.h \
  ../../../../../../components/softdevice/s212/headers/nrf_svc.h \
  ../../../../../../components/softdevice/s212/headers/ant_parameters.h \
+ ../../../../../../components/softdevice/common/nrf_sdh_ant.h \
  ../../../../../../components/softdevice/common/nrf_sdh.h \
- ../../../../../../components/softdevice/common/nrf_sdh_ant.h rtc.h adc.h \
- ppi.h ../../../../../../components/drivers_nrf/ppi/nrf_drv_ppi.h \
+ ../../../../../../components/softdevice/common/nrf_sdh_soc.h \
+ ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_soc.h rtc.h \
+ adc.h ant.h ppi.h \
+ ../../../../../../components/drivers_nrf/ppi/nrf_drv_ppi.h \
  ../../../../../../components/drivers_nrf/hal/nrf_ppi.h \
  ../../../../../../components/libraries/util/sdk_resources.h rtc.h \
- ../../../../../../components/libraries/experimental_log/nrf_log_default_backends.h
+ ../../../../../../components/libraries/experimental_log/nrf_log_default_backends.h \
+ ../../../../../../components/libraries/uart/app_uart.h \
+ ../../../../../../components/libraries/fifo/app_fifo.h
