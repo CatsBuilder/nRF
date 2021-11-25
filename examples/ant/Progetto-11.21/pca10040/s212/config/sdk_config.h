@@ -75,7 +75,7 @@
 
 // <o> CHAN_PERIOD - Channel Period (in 32 kHz counts).
 #ifndef CHAN_PERIOD
-#define CHAN_PERIOD 219
+#define CHAN_PERIOD 656
 #endif
 
 // <o> RF_FREQ - RF Frequency.
@@ -2389,7 +2389,7 @@
 // <o> RTC_DEFAULT_CONFIG_FREQUENCY - Frequency  <16-32768>
 
 #ifndef RTC_DEFAULT_CONFIG_FREQUENCY
-#define RTC_DEFAULT_CONFIG_FREQUENCY 450
+#define RTC_DEFAULT_CONFIG_FREQUENCY 150
 #endif
 
 // <q> RTC_DEFAULT_CONFIG_RELIABLE  - Ensures safe compare event triggering

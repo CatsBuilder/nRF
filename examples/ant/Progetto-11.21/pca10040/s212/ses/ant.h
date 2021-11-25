@@ -12,9 +12,9 @@
   #include "nrf_gpio.h"
   #include "sdk_errors.h"
 
-  static uint8_t counter=0;
+
 
   void ant_channel_tx_broadcast_setup(void);
-  void ant_send(uint16_t *message);
+  void ant_send(uint8_t *message);
   #endif
 

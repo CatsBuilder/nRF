@@ -1,38 +1,40 @@
 #include "adc.h"
 #include "nrf_drv_uart.h"
 #include "nrf_gpio.h"
+#include "ppi.h"
+#include "ant.h"
 // Handle the events once the samples are received in the buffer
-static uint16_t count=0;
-uint16_t val[SAMPLE_BUFFER_LEN]; // a variable to hold the data.
-
+static uint8_t count=0;
+//uint16_t val[SAMPLE_BUFFER_LEN]; // a variable to hold the data.
+uint8_t message_payload[ANT_STANDARD_DATA_PAYLOAD_SIZE];
 void saadc_callback_handler(nrf_drv_saadc_evt_t const * p_event){
-    
-    
-    
-    if(p_event -> type ==  NRF_DRV_SAADC_EVT_DONE){   // check if the sampling is done and we are ready to take these samples for processing
+      if(p_event -> type ==  NRF_DRV_SAADC_EVT_DONE){   // check if the sampling is done and we are ready to take these samples for processing
       ret_code_t err_code; // a variable to hold errors code
-    if (count==150){
-      nrf_gpio_pin_toggle(7);
-      count=0;
-    }
-        count++;
 // A function to take the samples (which are in the buffer in the form of 2's complement), and convert them to 16-bit interger values
       err_code = nrf_drv_saadc_buffer_convert(p_event->data.done.p_buffer, SAMPLE_BUFFER_LEN);
       APP_ERROR_CHECK(err_code); // check for errors
 
-// For loop is used to read and process each variable in the buffer, if the buffer size is 1, we don't need for loop
-      for(int i = 0; i<SAMPLE_BUFFER_LEN; i++){
+// For loop is used to read and process each variable in the buffer, if the buffer size is tl we don't need for loop
+      //for(int i = 0; i<SAMPLE_BUFFER_LEN; i++){
 //        NRF_LOG_INFO("Sample Value Read: %d", p_event->data.done.p_buffer[i]); // read the variable and print it
 
 // put the values in the array used for transmission
-        val[i] = p_event->data.done.p_buffer[i];
-
-        }
-    
-    ant_send(val); 
-      
-
-    nrf_saadc_event_clear(NRF_DRV_SAADC_EVT_DONE);
+       // val[i] = p_event->data.done.p_buffer[i];
+       memset(message_payload, 0, ANT_STANDARD_DATA_PAYLOAD_SIZE);
+  message_payload[ANT_STANDARD_DATA_PAYLOAD_SIZE - 8] = DEVICENUMBER;
+  message_payload[ANT_STANDARD_DATA_PAYLOAD_SIZE - 7] = count; 
+  message_payload[ANT_STANDARD_DATA_PAYLOAD_SIZE - 6] = (uint8_t)(*(p_event->data.done.p_buffer)>>8);
+  message_payload[ANT_STANDARD_DATA_PAYLOAD_SIZE - 5] = (uint8_t)(*(p_event->data.done.p_buffer)&0xFF);
+  message_payload[ANT_STANDARD_DATA_PAYLOAD_SIZE - 4] = (uint8_t)(*(p_event->data.done.p_buffer+1)>>8);
+  message_payload[ANT_STANDARD_DATA_PAYLOAD_SIZE - 3] = (uint8_t)(*(p_event->data.done.p_buffer+1)&0xFF);
+  message_payload[ANT_STANDARD_DATA_PAYLOAD_SIZE - 2] = (uint8_t)(*(p_event->data.done.p_buffer+2)>>8);
+  message_payload[ANT_STANDARD_DATA_PAYLOAD_SIZE - 1] = (uint8_t)(*(p_event->data.done.p_buffer+2)&0xFF);
+  
+        //}
+    //nrf_drv_ppi_channel_disable(ppi_channel_adc);
+    ant_send(message_payload);
+    //nrf_drv_ppi_channel_enable(ppi_channel_adc);
+    count++;
     }
 
 }
