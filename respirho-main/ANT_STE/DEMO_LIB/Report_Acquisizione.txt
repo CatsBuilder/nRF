@@ -1,0 +1,5 @@
+Numero campioni ricevuti dall'unita' 5: 0
+Numero campioni teorici unita' 5: 0
+L'acquisizone e' durata 0 secondi
+Frequenza di sampling: -nan(ind) Hz
+Data loss unita' 5: -nan(ind)%
